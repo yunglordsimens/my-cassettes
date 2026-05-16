@@ -1,0 +1,15 @@
+var u=Object.defineProperty;var y=(e,r,n)=>r in e?u(e,r,{enumerable:!0,configurable:!0,writable:!0,value:n}):e[r]=n;var a=(e,r,n)=>y(e,typeof r!="symbol"?r+"":r,n);import{c as t}from"./iframe-BVAVEnxW.js";import{Hello as h,GradientText as v}from"./MyCassettes.stories-DhdUK1x6.js";import{EllipseFollowsMouse as E}from"./P5MouseTest.stories-B_K6xM0e.js";import{TypingGlitch as x}from"./ProcessingSketch.stories-DlKKb5S4.js";import"./preload-helper-B6Kc3ndg.js";import"./P5Sketch-CNePpcXM.js";const o=.28,s=280,l=180;class b extends t.Component{constructor(){super(...arguments);a(this,"state",{error:null})}static getDerivedStateFromError(n){return{error:n}}render(){return this.state.error?t.createElement("div",{style:{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"#555",fontSize:13,fontFamily:"sans-serif"}},"preview unavailable"):this.props.children}}function C({id:e,title:r,tags:n,renderFn:m}){const g=s/o,f=l/o;return t.createElement("a",{href:`/?path=/story/${e}`,target:"_parent",style:{textDecoration:"none"}},t.createElement("div",{style:{width:s,height:l,overflow:"hidden",position:"relative",borderRadius:10,border:"1px solid #1f1f1f",background:"#080808",cursor:"pointer"}},t.createElement("div",{style:{width:g,height:f,transform:`scale(${o})`,transformOrigin:"top left",pointerEvents:"none"}},t.createElement(b,null,m())),t.createElement("div",{style:{position:"absolute",bottom:0,left:0,right:0,padding:"8px 12px",background:"linear-gradient(transparent, rgba(0,0,0,0.9))",color:"#fff",fontFamily:"system-ui, sans-serif"}},t.createElement("div",{style:{fontWeight:600,fontSize:12}},r),t.createElement("div",{style:{fontSize:10,opacity:.5}},n.join(" · ")))))}const F=[{id:"мои-кассеты-пример--hello",title:"Hello",tags:["demo","html"],renderFn:h.render},{id:"мои-кассеты-пример--gradient-text",title:"Gradient Text",tags:["css","typography"],renderFn:v.render},{id:"мои-кассеты-p5-mouse-test--ellipse-follows-mouse",title:"Ellipse Follows Mouse",tags:["p5","interactive"],renderFn:E.render},{id:"мои-кассеты-processing--typing-glitch",title:"Typing Glitch",tags:["processing","interactive"],renderFn:x.render}],D={title:"Галерея"},i={render:()=>t.createElement("div",{style:{display:"grid",gridTemplateColumns:"repeat(auto-fill, minmax(280px, 1fr))",gap:16,padding:24,background:"#050505",minHeight:"100vh"}},F.map(e=>t.createElement(C,{key:e.id,...e}))),parameters:{layout:"fullscreen"}};var d,p,c;i.parameters={...i.parameters,docs:{...(d=i.parameters)==null?void 0:d.docs,source:{originalSource:`{
+  render: () => <div style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+    gap: 16,
+    padding: 24,
+    background: '#050505',
+    minHeight: '100vh'
+  }}>
+      {cassettes.map(c => <MiniCard key={c.id} {...c} />)}
+    </div>,
+  parameters: {
+    layout: 'fullscreen'
+  }
+}`,...(c=(p=i.parameters)==null?void 0:p.docs)==null?void 0:c.source}}};const M=["Gallery"];export{i as Gallery,M as __namedExportsOrder,D as default};
