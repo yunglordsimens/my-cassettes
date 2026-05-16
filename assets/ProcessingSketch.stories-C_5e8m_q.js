@@ -1,4 +1,4 @@
-import{c as r}from"./iframe-SPdtdknn.js";import{P as p}from"./P5Sketch-CcHAi4r-.js";const i={title:"My Cassettes/Processing",tags:["processing","interactive"]},s=`
+import{c as r}from"./iframe-DjM9xLTZ.js";import{P as p}from"./P5Sketch-AXif7Bz3.js";const i={title:"My Cassettes/Processing",tags:["processing","interactive"]},s=`
 let texte = [];
 let fond;
 
