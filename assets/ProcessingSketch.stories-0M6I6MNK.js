@@ -1,4 +1,4 @@
-import{c as p}from"./iframe-B0FZaoQr.js";import{P as r}from"./P5Sketch-CNi0aUY4.js";import"./preload-helper-B6Kc3ndg.js";const c={title:"Мои кассеты/Processing",tags:["processing","interactive"]},i=`
+import{c as r}from"./iframe-B2N1bWij.js";import{P as p}from"./P5Sketch-DVokfmlq.js";const i={title:"My Cassettes/Processing",tags:["processing","interactive"]},s=`
 let texte = [];
 let fond;
 
@@ -11,7 +11,7 @@ p.setup = function() {
   p.fill(100);
   p.textAlign(p.CENTER, p.CENTER);
   p.textSize(20);
-  p.text('start typing text', p.width / 2, p.height / 2);
+  p.text('start typing...', p.width / 2, p.height / 2);
 };
 
 p.draw = function() {};
@@ -47,9 +47,9 @@ function redessine() {
     p.endShape();
   }
 }
-`,e={render:()=>p.createElement(r,{sketchCode:i}),parameters:{}};var t,n,o;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`{
+`,e={render:()=>r.createElement(p,{sketchCode:s}),parameters:{}};var t,o,n;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`{
   render: () => <P5Sketch sketchCode={mySketchCode} />,
   parameters: {
     // здесь можно добавить кастомное превью (скриншот), если захочешь
   }
-}`,...(o=(n=e.parameters)==null?void 0:n.docs)==null?void 0:o.source}}};const f=["TypingGlitch"];export{e as TypingGlitch,f as __namedExportsOrder,c as default};
+}`,...(n=(o=e.parameters)==null?void 0:o.docs)==null?void 0:n.source}}};const d=["TypingGlitch"],f=Object.freeze(Object.defineProperty({__proto__:null,TypingGlitch:e,__namedExportsOrder:d,default:i},Symbol.toStringTag,{value:"Module"}));export{f as _};
