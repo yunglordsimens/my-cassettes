@@ -1,26 +1,24 @@
-import{c as p}from"./iframe-BVAVEnxW.js";import{P as r}from"./P5Sketch-CNePpcXM.js";import"./preload-helper-B6Kc3ndg.js";const c={title:"Мои кассеты/Processing",tags:["processing","interactive"]},s=`
+import{c as p}from"./iframe-B0FZaoQr.js";import{P as r}from"./P5Sketch-CNi0aUY4.js";import"./preload-helper-B6Kc3ndg.js";const c={title:"Мои кассеты/Processing",tags:["processing","interactive"]},i=`
 let texte = [];
 let fond;
-let typo;
 
 p.setup = function() {
   p.createCanvas(1280, 300);
-  typo = p.createFont('Times New Roman', 128);
   fond = p.createGraphics(p.width, p.height);
+  fond.textFont('Times New Roman');
+  fond.textSize(128);
   p.background(0);
+  p.fill(100);
   p.textAlign(p.CENTER, p.CENTER);
+  p.textSize(20);
   p.text('start typing text', p.width / 2, p.height / 2);
 };
 
-p.draw = function() {
-  // пусто, перерисовка только по событиям
-};
+p.draw = function() {};
 
 p.keyReleased = function() {
   if (p.keyCode === p.BACKSPACE) {
-    if (texte.length > 0) {
-      texte.pop();
-    }
+    if (texte.length > 0) texte.pop();
     redessine();
   } else if ((p.keyCode >= 65 && p.keyCode <= 90) || p.keyCode === 32) {
     texte.push(p.key);
@@ -31,10 +29,11 @@ p.keyReleased = function() {
 function redessine() {
   const t = texte.join('');
   fond.background(0);
-  fond.textFont(typo);
   fond.textAlign(p.CENTER, p.CENTER);
+  fond.fill(255);
   fond.text(t, fond.width / 2, fond.height / 2);
   fond.filter(p.BLUR, 5);
+  fond.fill(255);
   fond.text(t, fond.width / 2, fond.height / 2);
   p.background(0);
   p.noFill();
@@ -48,9 +47,9 @@ function redessine() {
     p.endShape();
   }
 }
-`,e={render:()=>p.createElement(r,{sketchCode:s}),parameters:{}};var t,o,n;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`{
+`,e={render:()=>p.createElement(r,{sketchCode:i}),parameters:{}};var t,n,o;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`{
   render: () => <P5Sketch sketchCode={mySketchCode} />,
   parameters: {
     // здесь можно добавить кастомное превью (скриншот), если захочешь
   }
-}`,...(n=(o=e.parameters)==null?void 0:o.docs)==null?void 0:n.source}}};const h=["TypingGlitch"];export{e as TypingGlitch,h as __namedExportsOrder,c as default};
+}`,...(o=(n=e.parameters)==null?void 0:n.docs)==null?void 0:o.source}}};const f=["TypingGlitch"];export{e as TypingGlitch,f as __namedExportsOrder,c as default};

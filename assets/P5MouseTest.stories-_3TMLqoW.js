@@ -1,4 +1,4 @@
-import{c as r}from"./iframe-BVAVEnxW.js";import{P as p}from"./P5Sketch-CNePpcXM.js";import"./preload-helper-B6Kc3ndg.js";const i={title:"Мои кассеты/P5 Mouse Test",tags:["p5","interactive"]},a=`
+import{c as r}from"./iframe-B0FZaoQr.js";import{P as p}from"./P5Sketch-CNi0aUY4.js";import"./preload-helper-B6Kc3ndg.js";const i={title:"Мои кассеты/P5 Mouse Test",tags:["p5","interactive"]},a=`
 p.setup = function() {
   p.createCanvas(800, 500);
   p.background(20);
