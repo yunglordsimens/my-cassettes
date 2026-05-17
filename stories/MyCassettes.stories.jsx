@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default {
-  title: 'Мои кассеты/Пример',
+  title: 'My Cassettes/Sketches',
   tags: ['demo', 'html'],
 };
 

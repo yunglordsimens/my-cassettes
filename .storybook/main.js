@@ -14,9 +14,9 @@ const config = {
     '@storybook/addon-onboarding',
   ],
   framework: '@storybook/react-vite',
-  viteFinal: async (config) => {
-    // нужно для деплоя на GitHub Pages в подпапку /evro661/
-    if (process.env.NODE_ENV === 'production') {
+  viteFinal: async (config, { configType }) => {
+    // configType === 'PRODUCTION' при сборке, 'DEVELOPMENT' при dev-сервере
+    if (configType === 'PRODUCTION') {
       config.base = '/my-cassettes/';
     }
     return config;

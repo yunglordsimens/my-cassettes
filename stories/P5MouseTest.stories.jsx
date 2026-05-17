@@ -2,7 +2,7 @@ import React from 'react';
 import P5Sketch from './P5Sketch';
 
 export default {
-  title: 'Мои кассеты/P5 Mouse Test',
+  title: 'My Cassettes/P5 Mouse Test',
   tags: ['p5', 'interactive'],
 };
 
